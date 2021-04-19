@@ -83,7 +83,7 @@ body{
     background-color: #222329;
 }
 .page1{
-    height: 600px;  
+    /* height: 600px;   */
     background-color: rgba(246, 239, 239, 1);
 }
 #footer{

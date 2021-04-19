@@ -2,12 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script> 
     <script src="../script.js"> </script>
  
     <link rel='stylesheet' href='./stylesheet/main.css'>
     <link rel='stylesheet' href='./stylesheet/weather.css'>
     <link rel='stylesheet' href='./stylesheet/contact.css'>
+    <link rel="stylesheet" href='./stylesheet/skill.css'>
 
  
 </head> 
@@ -36,7 +38,7 @@
         </ul>
     </nav>
    
-
+<!--------- Banner Section ---------->
     <div id="banner">
         <div id="bannerContent">
             <h1 id="headTitle">I AM <br/>A Web Designer</h1>
@@ -48,8 +50,11 @@
     </div>
 
     <div class="page1">
+        <p>Skill: <button type="button" id="callData">Display Skills</button></p>
+        <ul id="output"></ul>
     </div>
 
+<!--------- The last page --------->
     <div class="page2 bottomPage">
         <p id="contactHead">Get in touch</p>
         
@@ -76,6 +81,38 @@
     </div>
    
     <footer id="footer">@2021 JSON-SERVER PROJECT | BY SARARAT BURKE</footer>
+
+<!-- Google sheet button -->
+<script>
+    $(function(){
+        $('#callData').click(function(){
+            var url = 'https://spreadsheets.google.com/feeds/list/1CpCT5pY70fSEoGZwGI-dcJ-N1QitzTfLbdHCaicNMDg/od6/public/values?alt=json'     
+            $.getJSON(url,function(data){
+                console.log(data.feed.entry);
+
+                var html = ''
+
+                $.each(data.feed.entry,function(key,val){
+                    console.log(val.gsx$studentid.$t)
+                    console.log(val.gsx$logo.$t)
+                    console.log(val.gsx$percent.$t)
+                    console.log(val.gsx$skills.$t)
+                    
+
+            html += '<article>'+ 
+
+                 '<h6>'+ val.gsx$percent.$t + '</h6>'+
+                '<img class="skillImg" src="'+ val.gsx$logo.$t +'" width="50" height="50"/><br/>' +
+                '<b>' + val.gsx$skills.$t + ' </b></article>'  
+                
+                })
+                $('#output').html(html); 
+            })
+        })
+    });
+</script>
+
+<!---------- Form Script --------->
     <script>
         const message = document.getElementById('message');
         const submit = document.querySelector('#submit');
