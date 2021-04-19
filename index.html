@@ -2,34 +2,75 @@
 <html>
 <head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
         body{
             background-image: url(./images/webBg.jpg);
+            background-color: #181818;
             background-size: 100%;
             background-repeat: no-repeat;
+            margin: 0;
         }
-        #headBanner{
-            height: 500px;
+        #navBar{
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            background-color: rgba(23,23,23, 0.8);
+            box-shadow: 2px 2px 15px rgba(23,23,23, 0.5);
+            position: fixed;
+
+        }
+        .nav{
+            display: inline;
+            color: #DAE5E1;
+            font-family:Arial;
+            padding: 5px 25px ;
+
+            
+        }
+        .inlineNav{
+            display: inline;
+            margin-left: 40px;
+        }
+        .icons{
+            margin-left: 350px;
+        }
+        .iconLink{
+            display: inline;
+        }
+        .images{
+            width: 20px;
+            margin-left: 5px;
+        }
+        #banner, .page1, .page2{
+            padding: 5px 40px;
             width: 70%;
-            padding: 60px;
-            background-color: rgba(36, 34, 17, 0.3) ;
-            box-shadow: 12px 12px 32px 12px  rgba(0, 0, 0, 0.8);
             margin:auto;
+            box-shadow: 12px 12px 32px 12px  rgba(0, 0, 0, 0.8);
+        }
+        #banner{
+            height: 500px;
+           
+            background-color: rgba(36, 34, 17, 0.3) ;
+              
+        }
+        #bannerContent{
+            width: 50%;
+        }
+        #head{
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #181818;
         }
         .page2{
             height: 600px;
-            width: 70%;
-            padding: 60px;
-            background-color: rgba(0, 0, 0, 1) ;
-            box-shadow: 12px 12px 32px 12px  rgba(0, 0, 0, 0.8);
-            margin:auto;
+            background-color: #222329;
+  
         }
         .page1{
-            height: 600px;
-            width: 70%;
-            padding: 60px;
-            background-color: rgba(220, 220, 220, 1) ;
-            box-shadow: 12px 12px 32px 12px  rgba(0, 0, 0, 0.8);
-            margin:auto;
+            height: 600px;  
+            background-color: rgba(246, 239, 239, 1) ;
+
         }
         #footer{
             margin-top: 20px;
@@ -39,13 +80,23 @@
 
 </head> 
 <body>
-    <nav id="">
-        <li>Home</li>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>contact</li>
+    <nav id="navBar">
+        <ul class="inlineNav">
+            <li class="nav">Home</li>
+            <!-- <li class="nav">About</li> -->
+            <li class="nav">Portfolio</li>
+            <li class="nav">Contact</li>   
+        </ul>
+        <ul class="inlineNav icons">
+            <li class="iconLink"><a href="https://www.linkedin.com/in/sararat-burke-869497b9/" target="_blank"><img src="images/in2.png" class="images"/></a></li>
+            <li class="iconLink"><a href="https://github.com/sararatBurke" target="_blank"><img src="images/github2.png" class="images"/></a></li>
+        </ul>
     </nav>
-    <div id="headBanner">
+    <div id="banner">
+        <div id="bannerContent">
+        <h1 id="head">Web Designer</h1>
+        </div>
+
     </div>
     <div class="page1">
     </div>
