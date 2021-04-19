@@ -87,6 +87,12 @@ body{
     background-color: rgba(246, 239, 239, 1);
 }
 #footer{
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial;
+    color:rgba(246, 239, 239, 1);
+    text-shadow: 2px 2px 5px rgba(15, 15, 14, 0.7);
+
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }
