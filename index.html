@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script> 
+    <script src="script.js"> </script>
  
     <link rel='stylesheet' href='./stylesheet/main.css'>
-
+    <link rel="stylesheet" href='./stylesheet/weather.css'>
+ 
 </head> 
 <body>
+    <!-- weather status in Boston -->
+    <div class="containWeather">
+        <img class="icon">
+        <p class="weather"></p>
+        <p class="temp"></p>
+        <p class="date"></p> 
+    </div>
+
+    <!-- Nav Bar -->
     <nav id="navBar">
         <ul class="inlineNav">
             <li class="nav">Home</li>
             <!-- <li class="nav">About</li> -->
             <li class="nav">Portfolio</li>
             <li class="nav">Contact</li>   
-        </ul>
+        </ul>  
         <ul class="inlineNav icons">
+            
             <li class="iconLink"><a href="https://www.linkedin.com/in/sararat-burke-869497b9/" target="_blank"><img src="images/in2.png"  id="position" class="images" /></a></li>
             <li class="iconLink"><a href="https://github.com/sararatBurke" target="_blank"><img src="images/github2.png"  class="images"/></a></li>
+            
         </ul>
     </nav>
+   
 
     <div id="banner">
         <div id="bannerContent">
             <h1 id="headTitle">I AM <br/>A Web Designer</h1>
+            
             <p id="headText">Experienced Web Developer with a demonstrated history of working in the construction industry. Skilled in Photography, Graphic Design, and Web Design. Strong engineering professional with a Bachelor's degree focused in Design and Applied Arts from Naresuan University. Currently studing in Web Development Program at Bunker Hill Community College in Boston, Massachusetts.</p>  
             <button id="contact">Contact Me</button>
         </div>
