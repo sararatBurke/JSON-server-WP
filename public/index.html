@@ -76,7 +76,36 @@
     </div>
    
     <footer id="footer">@2021 JSON-SERVER PROJECT | BY SARARAT BURKE</footer>
-    
+    <script>
+        const message = document.getElementById('message');
+        const submit = document.querySelector('#submit');
+
+
+        document.querySelector('#studentForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        message.innerHTML = ''
+        let name = document.querySelector('input[name="name"]')
+        let email = document.querySelector('input[name="email"]')
+        let comment = document.querySelector('input[name="comment"]')
+        let data = 'name=' + name.value + '&email=' + email.value + '&comment=' + comment.value;
+        const xhr = new XMLHttpRequest();
+
+        if (name.value && email.value && comment.value) {
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    message.innerHTML = xhr.response;
+                }
+            }
+            xhr.open('POST', 'http://localhost:3000/posts', true)
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+            xhr.send(data)
+        }
+        name.value = null
+        email.value = null
+        comment.value = null
+        })
+
+    </script>
 
     
 </body>   
