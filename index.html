@@ -6,7 +6,8 @@
     <script src="script.js"> </script>
  
     <link rel='stylesheet' href='./stylesheet/main.css'>
-    <link rel="stylesheet" href='./stylesheet/weather.css'>
+    <link rel='stylesheet' href='./stylesheet/weather.css'>
+    <link rel='stylesheet' href='./stylesheet/contact.css'>
  
 </head> 
 <body>
@@ -46,14 +47,24 @@
     </div>
     <div class="page1">
     </div>
-    <div class="page2">
+    <div class="page2 bottomPage">
+        <p id="contactHead">Get in touch</p>
+        <table>
+            <tr>
+                <td><input type="text" name="name" class="textBox" value="NAME"></td>
+                <td rowspan="2"><textarea id="comment" >MESSAGE</textarea></td>
+            </tr>
+            <tr>
+                <td><input typr="text" name="email" class="textBox email" value="EMAIL"></td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td colspan="2"><input type="submit" id="submit" name="Send Data"></td>
+            </tr>
+            
+        </table>   
     </div>
-    <div class="page1">
-    </div>
-    <div class="page2">
-    </div>
-    <div class="page1" >
-    </div>
+   
     <footer id="footer">@2021</footer>
 
 </body>   
