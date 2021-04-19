@@ -42,6 +42,13 @@ table {
     margin: auto;
     margin-bottom: 50px;
 }
+td{
+    color:#070201;
+    font-family: Arial;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+}
 input, textarea{
     color: #cccccc;
     background-color: rgba(0,0,0, 0.5);
@@ -52,3 +59,7 @@ input, textarea{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px
 }
+#message{
+    text-align: center;
+}
+

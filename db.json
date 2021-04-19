@@ -1,9 +1,10 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "NAME",
+      "email": "EMAIL",
+      "comment": "MESSAGE",
+      "id": 1
     }
   ],
   "comments": [
