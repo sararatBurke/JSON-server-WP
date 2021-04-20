@@ -1,3 +1,21 @@
+#contectTitle{
+    margin-top: 50px;
+    color: #dddddd;
+    font-size: 4em;
+    text-align: center;
+   
+}
+.contactName{
+    color:#e4e4e4;
+    font-size: 1.3em;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+.contactText{
+    color:#e4e4e4;
+    font-size: 1em;
+    font-family: Arial;
+}
 #contactHead{
     font-size: 14px;
     font-family: Arial;
@@ -5,7 +23,8 @@
     color:#e4e4e4;
     text-align: center;
 
-    margin-top: 30px;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 .textBox{
     font-family: Arial;
@@ -34,7 +53,7 @@
     border: none;
     padding: 5px ;
     margin-left: 40%;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 table {
@@ -46,7 +65,7 @@ table {
 }
 td{
     /* border: 1px solid #1a1312; */
-    color:#070201;
+    color:#7c7c7c;
     font-family: Arial;
     font-size: 0.9em;
     text-transform: uppercase;
