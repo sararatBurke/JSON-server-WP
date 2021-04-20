@@ -64,8 +64,8 @@ a:hover{ color:#EE6557;}
     padding: 20px;     
 } 
 #headText{
-    color:#fff;
-    font-family: 'Roboto', sans-serif;
+    color:#999999;
+    font-family: Arial;
     font-size: 15px;
     line-height: 25px;
 }

@@ -12,19 +12,19 @@
     text-transform: uppercase;
 }
 .contactText{
-    color:#e4e4e4;
+    color:#7c7c7c;
     font-size: 1em;
     font-family: Arial;
 }
 #contactHead{
-    font-size: 14px;
+    font-size: 1.2em;
     font-family: Arial;
     text-transform: uppercase;
     color:#e4e4e4;
     text-align: center;
 
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 .textBox{
     font-family: Arial;
