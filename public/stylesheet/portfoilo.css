@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@100&display=swap');        
+
+#portfolioHead{
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4em;
+
+}
+#webHead{
+    font-family: Arial;
+    font-size:  1.3em;
+}
+.webDisplay{
+    display:inline;
+}
+.webImg{
+    height: 100px;
+    margin-right: 10px;
+    border: 1px solid #855959;
+}
