@@ -28,7 +28,7 @@
 }
 .textBox{
     font-family: Arial;
-    font-size: 11px;
+    font-size: 0.9em;
     width: 90%;
     height: 28px;
     padding: 5px 10px;
@@ -37,7 +37,7 @@
 
 #comment{
     font-family: Arial;
-    font-size: 11px;
+    font-size: 0.9em;
     margin-left: 5px;
     width: 90%;
     height: 65px;
