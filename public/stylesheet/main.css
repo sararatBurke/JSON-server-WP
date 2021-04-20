@@ -44,7 +44,9 @@ body{
 }
 #banner{
        
-    background-color: rgba(36, 34, 17, 0.3); 
+    /* background-color: rgba(36, 34, 17, 0.3);  */
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(22, 14, 11, 1) 25%, rgba(68, 56, 39, 0.679) 45%, rgba(112, 104, 84, 0.287) 93%);
     border-top-left-radius: 5px;  
     border-top-right-radius: 5px; 
     margin-top: 100px;  
