@@ -7,6 +7,13 @@ body{
     background-repeat: no-repeat;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: #DAE5E1;
+    font-family:Arial;
+    padding: 5px 25px; 
+}
+a:hover{ color:#EE6557;}
 #navBar{
     top: 0;
     width: 100%;
@@ -16,12 +23,7 @@ body{
     box-shadow: 2px 2px 15px rgba(23,23,23, 0.5);
     position: fixed;
 }
-.nav{
-    display: inline;
-    color: #DAE5E1;
-    font-family:Arial;
-    padding: 5px 25px; 
-}
+.nav{ display: inline; }
 .inlineNav{
     display: inline;
     margin-left: 50px;
