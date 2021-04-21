@@ -9,7 +9,9 @@ function(data){
             var temp =  Math.floor(data.main.temp) + "°F";
             
             var weather = data.weather[0].main;
+            var city = data.name;
 
+            $(".city").append(city);
             $(".icon").attr("src", icon);
             $(".weather").append(weather);
             $(".temp").append(temp);
