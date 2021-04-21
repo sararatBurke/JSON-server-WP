@@ -3,11 +3,12 @@
     font-size:  1.3em;
 }
 #callData{
-    font-weight: 700;
     color: #000;
+    font-size: 0.9em;
+    font-weight: 400;
     border: none;
     text-decoration: underline;
-    padding: 10px;
+    /* padding: 10px; */
     margin-bottom: 50px;
 }
 #callData:hover{
@@ -18,16 +19,16 @@
     margin-right:  auto;
     align-content: center;
 }
-h5{text-align: center;}
 article{
     font-family: 'Arial';
     text-align: center;
 
+
     border: none;
     border-radius: 10px;
     width: 100px;
-    padding: 10px;
-    margin-bottom: 50px;
+
+    margin-bottom: 30px;
     margin-right: 20px;
     align-items: center;
     
@@ -35,21 +36,28 @@ article{
     box-shadow: 2px 2px 10px rgba(0,0,0, 0.3);
     display: inline-block;
 }
+
 h6{ 
-    font-size: 12px;
+    font-size: 10px;
     color: #fff;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+   
 
     background-color: black;
     border-radius: 50%;
-    padding: 12px 12px 5px 5px;
+    padding:  8px 8px 7px 3px;
     box-shadow: 1px 1px 5px #000;
-    margin-top: -30px;
+    margin-top: -13px;
     margin-left: auto;
     margin-right: auto;
 }
 .skillImg{
     align-items: center;
-    margin-top: -20px;
+    margin-top: -10px;
+}
+.skillText{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding:5px;
 }

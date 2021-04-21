@@ -21,7 +21,7 @@ $(document).ready(function(){
 
                 '<h6>'+ val.gsx$percent.$t + '</h6>'+
                 '<img class="skillImg" src="'+ val.gsx$logo.$t +'" width="50" height="50"/><br/>' +
-                '<b>' + val.gsx$skills.$t + ' </b></article>'  
+                '<h5 class="skillText">' + val.gsx$skills.$t + ' </h5></article>'  
                 
                 })
                 $('#output').html(html); 

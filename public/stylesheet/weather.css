@@ -1,7 +1,7 @@
 .icon{
     width: 55px;
 }
-.weather{
+/* .weather{
     font-size: 16px;
     font-family: Arial;
 
@@ -25,6 +25,33 @@
     margin: auto; 
     padding: 0 10px;
     background:#83BEC5;
+    position: fixed;
+    
+} */
+.weather{
+    font-size: 16px;
+    font-family: Arial;
+
+    color: rgb(230, 252, 255);
+    margin: 0;   
+}
+
+.temp{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0085a7;
+    padding-top: 5px;
+    margin-top: 0;
+       
+}
+
+.containWeather{ 
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: auto; 
+    padding: 0 10px;
+    background: #050505;
     position: fixed;
     
 }
