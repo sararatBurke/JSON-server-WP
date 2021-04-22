@@ -75,20 +75,30 @@ a:hover{ color:#EE6557;}
     box-shadow: 2px 2px 15px rgba(0,0,0, 0.5);
     border: none;
     padding: 5px;
-    margin-left: 43%;
+    margin-left: 38%;
     margin-top: 20px;
     margin-bottom: 50px;
     width: 100px;
-
-
 }
 
 .page2{
     background-color: #222329;
 }
+.sectionTitle2{
+    color: #ddd;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 50px;
+}
 .page1{
     /* height: 600px;   */
     background-color: rgba(246, 239, 239, 1);
+}
+.sectionTitle1{ 
+    color: #000;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 50px;
 }
 #footer{
     text-align: center;
