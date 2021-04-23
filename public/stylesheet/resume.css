@@ -3,15 +3,43 @@
 
 }
 .left-col{
-    width: 25%;
+    width: 20%;
     float: left;
     position: relative;
     
 }
 .right-col{
-    width: 70%;
+    width: 73%;
     float: right;
     position: relative;
     font-family: Arial;
     display: block;
+}
+
+.left-col-title{
+    color: #74240c;
+    font-family: Arial;
+    font-size: 1.5em;
+    text-transform: uppercase;
+ 
+
+}
+.right-col-title{
+    color: #4d3131;
+    font-family: Arial;
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #74240c;
+}
+.right-col-subTitle{
+    color: #303030;
+    font-family: Arial;
+    font-size: 1em;
+    margin-top: 0;
+}
+.right-col-text{
+    color: #5c5c5c;
+    font-family: Arial;
+    font-size: 0.9em;
+    margin-top: 0;
 }
