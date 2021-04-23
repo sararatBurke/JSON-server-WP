@@ -1,0 +1,17 @@
+.resume{
+    overflow: hidden;
+
+}
+.left-col{
+    width: 25%;
+    float: left;
+    position: relative;
+    
+}
+.right-col{
+    width: 70%;
+    float: right;
+    position: relative;
+    font-family: Arial;
+    display: block;
+}
