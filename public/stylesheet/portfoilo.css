@@ -4,12 +4,13 @@
 #webHead{
     font-family: Arial;
     font-size:  1.3em;
+    color: #e4e4e4;
 }
 .webDisplay{
     display:inline;
 }
 .webImg{
-    height: 100px;
+    height: 110px;
     margin-right: 10px;
-    border: 1px solid #855959;
+    border: 1px solid #050505;
 }
