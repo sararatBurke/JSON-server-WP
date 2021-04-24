@@ -40,17 +40,17 @@
     font-family: Arial;
     font-size: 0.9em;
     width: 90%;
-    height: 28px;
+    height: 22px;
     padding: 5px 10px;
     
 }
 
-#comment{
+#message{
     font-family: Arial;
     font-size: 0.9em;
     margin-left: 5px;
     width: 90%;
-    height: 65px;
+    height: 88px;
     padding: 10px;
 }
 
@@ -93,7 +93,7 @@ input, textarea{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px
 }
-#message{
+#messageDisplay{
     text-align: center;
     display: none;
 }

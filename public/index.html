@@ -60,7 +60,7 @@
     <div id="Portfolio" class="page2">
         <h1 id="portfolioHead" class="sectionTitle2">Portfolio</h1>
         <h3 id="webHead">Website & Application:</h3>
-        <ul id="display">
+        <ul id="imgDisplay">
             <li class="webDisplay"><img class="webImg" src="./images/portfolio1.png"></li>
             <li class="webDisplay"><img class="webImg" src="./images/todo-burger.png"></li>
             <li class="webDisplay"><img class="webImg" src="./images/todo-react.png"></li>
@@ -147,13 +147,17 @@
             <table>
                 <tr>
                     <td>Name:</td>
-                    <td><input type="text" name="name" value="NAME" class="textBox"></td>
-                    <td rowspan="2"><input type="text" name="comment" value="MESSAGE" id="comment" class="textBox"></td>
+                    <td><input type="text" name="name" value="NAME" class="textBox" required></td>
+                    <td rowspan="3"><textarea name="message" value="MESSAGE" id="message" class="textBox"></textarea></td>
                 </tr>
 
                 <tr>
                     <td>Email:</td>
-                    <td><input type="email" name="email" value="EMAIL" class="textBox"></td>
+                    <td><input type="email" name="email" value="EMAIL" class="textBox" required></td>
+                </tr>
+                <tr>
+                    <td>Subject:</td>
+                    <td><input type="text" name="subject" value="SUBJECT" class="textBox"></td>
                 </tr>
 
                 <tr>
@@ -161,7 +165,7 @@
                 </tr>
             </table>
         
-            <div id="message" class="msg"></div>
+            <div id="messageDisplay" class="msg"></div>
              
         </form>
             
@@ -173,23 +177,24 @@
 
 <!---------- Form Script --------->
     <script>
-        const message = document.getElementById('message');
+        const messageDisplay = document.getElementById('messageDisplay');
         const submit = document.querySelector('#submit');
 
 
         document.querySelector('#studentForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        message.innerHTML = ''
+        messageDisplay.innerHTML = ''
         let name = document.querySelector('input[name="name"]')
         let email = document.querySelector('input[name="email"]')
-        let comment = document.querySelector('input[name="comment"]')
-        let data = 'name=' + name.value + '&email=' + email.value + '&comment=' + comment.value;
+        let subject = document.querySelector('input[name="subject"]')
+        let message = document.getElementById("message")
+        let data = 'name=' + name.value + '&email=' + email.value + '&subject=' + subject.value + '&message=' + message.value;
         const xhr = new XMLHttpRequest();
 
-        if (name.value && email.value && comment.value) {
+        if (name.value && email.value && subject.value && message.value) {
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4) {
-                    message.innerHTML = xhr.response;
+                    messageDisplay.innerHTML = xhr.response;
                 }
             }
             xhr.open('POST', 'http://localhost:3000/posts', true)
@@ -198,7 +203,8 @@
         }
         name.value = null
         email.value = null
-        comment.value = null
+        subject.value = null
+        message.value = null
         })
 
     </script>
