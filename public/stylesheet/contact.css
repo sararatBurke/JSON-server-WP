@@ -19,6 +19,23 @@
     margin-top: 70px;
     margin-bottom: 30px;
 }
+#left{
+    display: inline;
+    width: 50%;
+}
+#right{
+    display: inline;
+    width:200px;
+    float: right;
+
+    margin-top: -15%;
+    margin-left: 50%;
+    margin-right: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #7c7c7c;
+}
 .textBox{
     font-family: Arial;
     font-size: 0.9em;
@@ -80,4 +97,5 @@ input, textarea{
     text-align: center;
     display: none;
 }
+
 
