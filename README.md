@@ -1,5 +1,5 @@
 # JSON-server-WP
-This is a JSON Final Project following the discription below
+This is a JSON Final Project following the description below
 
 Create a website that consists of at least 3 pages (e.g. home, portfolio, contact) that include the following:
 
